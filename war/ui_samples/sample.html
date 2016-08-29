@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/oridomi.min.js"></script>
+		<script type="text/javascript" src="js/jsc3d_alexhack.js"></script>
+		<script type="text/javascript" src="js/jsc3d.webgl.js"></script>
+		<script type="text/javascript" src="js/jsc3d.touch.js"></script>
+		<script type="text/javascript">
+			function init()
+			{
+				// Folding effects
+				var folded = new OriDomi(document.getElementById('foldablePanel'), {
+							  vPanels:         12,     // number of panels when folding left or right (vertically oriented)
+							  hPanels:         1,     // number of panels when folding top or bottom
+							  speed:           10,  // folding duration in ms
+							  ripple:          3,     // backwards ripple effect when animating
+							  shadingIntesity: .5,    // lessen the shading effect
+							  perspective:     500,   // smaller values exaggerate 3D distortion
+							  maxAngle:        85,    // keep the user's folds within a range of -40 to 40 degrees
+							  shading:         'soft' // change the shading type
+							});
+				folded.accordion(85, 'left').setSpeed(1500).unfold();
+				
+				// 3D obj
+				var canvas = document.getElementById('cv1');
+				var viewer = new JSC3D.Viewer(canvas);
+				viewer.setParameter('SceneUrl', 'https://libexhibition-philippineshist.appspot.com/ui_samples/models/OracleBone39/14_7.obj');
+				viewer.setParameter('InitRotationX', 0);
+				viewer.setParameter('InitRotationY', 30);
+				viewer.setParameter('InitRotationZ', 0);
+				viewer.setParameter('ModelColor', '#57524C');
+				viewer.setParameter('BackgroundColor1', '#FFFFFF');
+				viewer.setParameter('BackgroundColor2', '#000000');
+				viewer.setParameter('RenderMode', 'texturesmooth');
+				viewer.setParameter('MipMapping', 'on');
+				viewer.setParameter('Renderer', 'webgl');
+				viewer.init();
+				viewer.update();
+				//setInterval(function(){viewer.rotate(0, 3, 0); viewer.update();}, 60);
+				
+				var canvas = document.getElementById('cv2');
+				var viewer = new JSC3D.Viewer(canvas);
+				viewer.setParameter('SceneUrl', 'https://dl.dropboxusercontent.com/s/ricqvb5wztescxl/11_4_6s.obj');
+				viewer.setParameter('TextureUrl', 'https://libexhibition-philippineshist.appspot.com/ui_samples/models/OracleBone28/11_4_6s.mtl');
+				viewer.setParameter('InitRotationX', 0);
+				viewer.setParameter('InitRotationY', 30);
+				viewer.setParameter('InitRotationZ', 0);
+				viewer.setParameter('ModelColor', '#57524C');
+				viewer.setParameter('BackgroundColor1', '#FFFFFF');
+				viewer.setParameter('BackgroundColor2', '#000000');
+				viewer.setParameter('RenderMode', 'texturesmooth');
+				viewer.setParameter('MipMapping', 'on');
+				viewer.setParameter('Renderer', 'webgl');
+				viewer.init();
+				viewer.update();
+				//setInterval(function(){viewer.rotate(0, 3, 0); viewer.update();}, 60);
+			}
+		</script>
+	</head>
+
+	<body onload="init()" style="width:100%;text-align:center;background-color:black;">
+		<div style="width:100%;margin:auto;margin-top:30px;">
+			<div id="foldablePanel" style="display:inline-block;">
+				<img src="models/image.jpg"/>
+			</div>
+		</div>
+
+		<div style="display:inline-block;margin:10px;">
+			<div style="width:600px; margin:auto; margin-top:50px;position:relative; font-size: 9pt; color: #777777;">
+				<canvas id="cv1" style="border: 1px solid;" width="600" height="450" />
+				<p style="font-family:Arial,sans-serif;">The model is from the internet. It <b>should not</b> be used for any commercial purpose.</p>
+			</div>
+		</div>
+		
+		<div style="display:inline-block;margin:10px;">
+			<div style="width:600px; margin:auto; margin-top:50px;position:relative; font-size: 9pt; color: #777777;">
+				<canvas id="cv2" style="border: 1px solid;" width="600" height="450" />
+				<p style="font-family:Arial,sans-serif;">The model is from the internet. It <b>should not</b> be used for any commercial purpose.</p>
+			</div>
+		</div>
+
+	</body>
+</html>

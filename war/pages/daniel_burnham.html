@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Lora' />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Fondamento' />
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+	var defaultCSS = "../css/exhibition.css";
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.indexOf("android") > -1 && ua.indexOf("mobile")
+			&& ua.indexOf("chrome") == -1)
+		defaultCSS = "../css/exhibition_android.css"
+	link = document.createElement("link");
+	link.href = defaultCSS;
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	link.media = "screen,print";
+	document.getElementsByTagName("head")[0].appendChild(link);
+</script>
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css" />
+</head>
+<body>
+	<!-- <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script> -->
+	<script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+	<div class="content">
+		<div class="reverse_row_container">
+			<div class="menu_card">
+				<article>
+					<header>Manila</header>
+					<ul class="menu">
+						<a href="../index.html"><li class="home">Home</li></a>
+						<a href="manila_background.html"><li>Background</li></a>
+						<a href="manila_intramuros.html"><li>Intramuros</li></a>
+						<a href="daniel_burnham.html"><li class="current">Daniel Burnham</li></a>
+						<a href="washington_dc.html"><li>Washington DC</li></a>
+						<a href="1905_manila_plan.html"><li>1905 Manila Plan</li></a>
+						<a href="manila_rizal_park.html"><li>Rizal Park</li></a>
+					</ul>
+				</article>
+			</div>
+			<div class="column_container">
+				<div class="card detail_card">
+					<article>
+						<header>Daniel Burnham</header>
+						<div class="imgbox">
+							<a href="../images/Burmham_Slide.jpg" data-lightbox="image-3"
+								data-title="Daniel Burnham"> <img
+								src="../images/Burmham_Slide.jpg" />
+							</a>
+						</div>
+						<p>Arguably the most famous architect-urban planner in the
+							world by the start of the twentieth century, Burnham was
+							approached by the United States government in 1904 to prepare a
+							city plan for Manila. The resultant 1905 scheme, in the style of
+							grandiose City Beautiful type of urban design, sought to
+							radically restructure the environmental form of Manila, and in
+							conjunction enable the US colonial government in the Philippines
+							to manage in a controlled manner the development of the
+							Philippine capital city.</p>
+						<p>
+							Born in New York State Burnham’s career was largely grounded in
+							Chicago, New York, and Washington DC. In 1893, for instance, in
+							Chicago, Burnham was responsible for the plan of the Columbian
+							World’s Exposition, and event celebrating the 400<sup>th</sup>
+							anniversary of Christopher Colombus’ arrival in the Americas.
+							With its ordered, symmetrical, large-scale layout the Exposition
+							had a profound impact on American architecture and urban design,
+							and influenced the City Beautiful Movement, a social reform
+							movement seeking to use art and beauty as a means to uplift the
+							condition of urban environments.
+						</p>
+
+						<div class="for_more_info">
+							Click <a target="for_more_info"
+								href="http://xroads.virginia.edu/~cap/citybeautiful/city.html">here</a>
+							for further information.
+						</div>
+
+
+						<!-- <div class="fb-like"
+							data-href="https://libexhibition-philippineshist.appspot.com/pages/daniel_burnham.html"
+							data-layout="button_count" data-action="like"
+							data-show-faces="true" data-share="false" style="position:absolute;bottom:10px"/> -->
+					</article>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="bottom_bar">
+		<img src="../images/culib.png" /> Copyright &copy;
+		<script>
+			document.write(new Date().getFullYear())
+		</script>
+		The Chinese University of Hong Kong Library. All rights reserved.
+	</div>
+</body>
+</html>

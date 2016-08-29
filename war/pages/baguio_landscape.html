@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Lora' />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Fondamento' />
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+	var defaultCSS = "../css/exhibition.css";
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.indexOf("android") > -1 && ua.indexOf("mobile")
+			&& ua.indexOf("chrome") == -1)
+		defaultCSS = "../css/exhibition_android.css"
+	link = document.createElement("link");
+	link.href = defaultCSS;
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	link.media = "screen,print";
+	document.getElementsByTagName("head")[0].appendChild(link);
+</script>
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css" />
+</head>
+<body>
+	<!-- <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script> -->
+	<script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+	<div class="content">
+		<div class="reverse_row_container">
+			<div class="menu_card">
+				<article>
+					<header>Baguio</header>
+					<ul class="menu">
+						<a href="../index.html"><li class="home">Home</li></a>
+						<a href="benguet_uplands.html"><li>Benguet Uplands</li></a>
+						<a href="baguio_igorots.html"><li>Igorots</li></a>
+						<a href="1905_baguio_plan.html"><li>1905 Baguio Plan</li></a>
+						<a href="baguio_landscape.html"><li class="current">Landscape</li></a>
+						<a href="burnham_park.html"><li>Burnham Park</li></a>
+					</ul>
+				</article>
+			</div>
+			<div class="column_container">
+				<div class="card detail_card">
+					<article>
+						<header>Landscape</header>
+						<div class="imgbox">
+							<a href="../images/Landscape_Slide_large.jpg"
+								data-lightbox="image-10" data-title="Landscape"> <img
+								style="width: 70%" src="../images/Landscape_Slide.jpg" />
+							</a>
+						</div>
+						<p>Unlike other cities in the Philippines, Baguio from its
+							inception was designed as a total urban environment, and one that
+							was to harmonise with the distinct landscape in Benguet Province.
+							Signifying the modernisation of the Philippines, the
+							transformation of a hitherto barren landscape into a modern city,
+							was to the Americans about demonstrating to Filipinos the
+							‘uplifting’ and ‘civilising’ of local society.</p>
+
+						<p>Yet, notably, the visual quality of Baguio as it was
+							developed also helped the city to develop a unique reputation:
+							with green spaces at the sides of roadways, and with houses set
+							back from the front of their plots, greenery was to be the
+							primary constituent of the urban environment. The preservation of
+							hilltops and trees also played an important role in presenting
+							this urban image: buildings and roads were not to dominate the
+							natural landscape but rather were to integrate themselves with
+							their setting.</p>
+
+						<!-- <div class="fb-like"
+							data-href="https://libexhibition-philippineshist.appspot.com/pages/baguio_landscape.html"
+							data-layout="button_count" data-action="like"
+							data-show-faces="true" data-share="false" style="position:absolute;bottom:10px"/> -->
+
+					</article>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="bottom_bar">
+		<img src="../images/culib.png" /> Copyright &copy;
+		<script>
+			document.write(new Date().getFullYear())
+		</script>
+		The Chinese University of Hong Kong Library. All rights reserved.
+	</div>
+</body>
+</html>

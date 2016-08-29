@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Lora' />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Fondamento' />
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+	var defaultCSS = "../css/exhibition.css";
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.indexOf("android") > -1 && ua.indexOf("mobile")
+			&& ua.indexOf("chrome") == -1)
+		defaultCSS = "../css/exhibition_android.css"
+	link = document.createElement("link");
+	link.href = defaultCSS;
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	link.media = "screen,print";
+	document.getElementsByTagName("head")[0].appendChild(link);
+</script>
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css" />
+</head>
+<body>
+	<!-- <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script> -->
+	<script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+	<div class="content">
+		<div class="reverse_row_container">
+			<div class="menu_card">
+				<article>
+					<header>Manila</header>
+					<ul class="menu">
+						<a href="../index.html"><li class="home">Home</li></a>
+						<a href="manila_background.html"><li>Background</li></a>
+						<a href="manila_intramuros.html"><li class="current">Intramuros</li></a>
+						<a href="daniel_burnham.html"><li>Daniel Burnham</li></a>
+						<a href="washington_dc.html"><li>Washington DC</li></a>
+						<a href="1905_manila_plan.html"><li>1905 Manila Plan</li></a>
+						<a href="manila_rizal_park.html"><li>Rizal Park</li></a>
+					</ul>
+				</article>
+			</div>
+			<div class="column_container">
+				<div class="card detail_card">
+					<article>
+						<header>Intramuros</header>
+						<div class="imgbox">
+							<a href="../images/Intramuros_Slide_large.jpg"
+								data-lightbox="image-2" data-title="Intramuros"> <img
+								src="../images/Intramuros_Slide.jpg" />
+							</a>
+						</div>
+						<p>
+							The arrival of the Spanish ultimately reshaped how life was lived
+							in many parts of the Philippine Archipelago, including in Manila.
+							As one of the first colonial cities in the Philippines Manila in
+							1574 was given the title <span class="emphasis">Insigne y
+								Siempre Leal Cuidad</span> (Distinguished and Ever Loyal City), and in
+							light of the need to safely administer the Philippines from the
+							new capital large stone fortifications were erected from the
+							1590s. Known as the <span class="emphasis">Intramuros</span>
+							(‘within the walls’) the walled city was the epicentre of
+							colonial government, religion, and culture until 1898.
+						</p>
+
+						<p>But life in Manila before 1898 was precarious: outbreaks of
+							fire, earthquakes, and disease all left an imprint on the
+							Philippine capital. Moreover the local economy was propped up by
+							the galleon trade between the Philippines and Mexico. Once trade
+							between East Asia and the Americas stopped in 1815 a downturn in
+							the fortunes of country prevailed, and notwithstanding the
+							Philippines being permitted by the Spanish government in Madrid
+							to reopen itself to international trade by the mid-19th century
+							the country was defined by under-development by the time of the
+							Spanish-American War (of 1898). With the signing of the Treaty of
+							Paris between Spain and America, and the handing over of US$20
+							million, colonial jurisdiction was passed into American hands.</p>
+
+						<div class="for_more_info">
+							Click <a target="for_more_info"
+								href="https://www.loc.gov/rr/hispanic/1898/intro.html">here</a>
+							for further information.
+						</div>
+						<!-- <div class="fb-like" 
+								data-href="https://libexhibition-philippineshist.appspot.com/pages/manila_intramuros.html"
+								data-layout="button_count" data-action="like"
+								data-show-faces="true" data-share="false" style="position:absolute;bottom:10px"/>
+							</div> -->
+
+					</article>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="bottom_bar">
+		<img src="../images/culib.png" /> Copyright &copy;
+		<script>
+			document.write(new Date().getFullYear())
+		</script>
+		The Chinese University of Hong Kong Library. All rights reserved.
+	</div>
+</body>
+</html>

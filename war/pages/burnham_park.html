@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Lora' />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Fondamento' />
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+	var defaultCSS = "../css/exhibition.css";
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.indexOf("android") > -1 && ua.indexOf("mobile")
+			&& ua.indexOf("chrome") == -1)
+		defaultCSS = "../css/exhibition_android.css"
+	link = document.createElement("link");
+	link.href = defaultCSS;
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	link.media = "screen,print";
+	document.getElementsByTagName("head")[0].appendChild(link);
+</script>
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css" />
+</head>
+<body>
+	<!-- <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script> -->
+	<script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+	<div class="content">
+		<div class="reverse_row_container">
+			<div class="menu_card">
+				<article>
+					<header>Baguio</header>
+					<ul class="menu">
+						<a href="../index.html"><li class="home">Home</li></a>
+						<a href="benguet_uplands.html"><li>Benguet Uplands</li></a>
+						<a href="baguio_igorots.html"><li>Igorots</li></a>
+						<a href="1905_baguio_plan.html"><li>1905 Baguio Plan</li></a>
+						<a href="baguio_landscape.html"><li>Landscape</li></a>
+						<a href="burnham_park.html"><li class="current">Burnham Park</li></a>
+					</ul>
+				</article>
+			</div>
+			<div class="column_container">
+				<div class="card detail_card">
+					<article>
+						<header>Burnham Park</header>
+						<div class="imgbox">
+							<a href="../images/BurnhamPark_Slide_large.jpg"
+								data-lightbox="image-11" data-title="Burnham Park"> <img
+								src="../images/BurnhamPark_Slide.jpg" />
+							</a>
+						</div>
+						<p>At the centre of the plan for Manila was Rizal Park, a
+							Washington DC-esque Mall space. In Baguio, Burnham originally
+							recommended the laying out of an esplanade in the urban core
+							between the local and national government districts but in the
+							light of the intervention of William E. Parsons, the colonial
+							government’s Consultant Architect, the esplanade was subsequently
+							redesigned into a large, open park space: Burnham Park.</p>
+
+						<p>Presently Burnham Park is an exceptionally well-used space
+							containing a boating lake, footpaths, and playgrounds. Attracting
+							people to the city of Baguio from the surrounding hinterland, the
+							park provides quiet away from the nearby bus station and market
+							building. The park also contains two statues to individuals who
+							shaped what it is to be Filipino; one statue is to Jose Rizal,
+							‘the Father of the Filipinos’; the other statue is dedicated to
+							Daniel Burnham, a designer who suggested in 1905 a new urban
+							environmental model for the Philippines, one which made the
+							Spanish colonial type of urban design become redundant.</p>
+
+						<!-- <div class="fb-like"
+							data-href="https://libexhibition-philippineshist.appspot.com/pages/burnham_park.html"
+							data-layout="button_count" data-action="like"
+							data-show-faces="true" data-share="false" style="position:absolute;bottom:10px"/> -->
+
+					</article>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="bottom_bar">
+		<img src="../images/culib.png" /> Copyright &copy;
+		<script>
+			document.write(new Date().getFullYear())
+		</script>
+		The Chinese University of Hong Kong Library. All rights reserved.
+	</div>
+</body>
+</html>

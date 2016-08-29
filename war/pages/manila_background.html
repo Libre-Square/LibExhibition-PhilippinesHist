@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Lora' />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Fondamento' />
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+	var defaultCSS = "../css/exhibition.css";
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.indexOf("android") > -1 && ua.indexOf("mobile")
+			&& ua.indexOf("chrome") == -1)
+		defaultCSS = "../css/exhibition_android.css"
+	link = document.createElement("link");
+	link.href = defaultCSS;
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	link.media = "screen,print";
+	document.getElementsByTagName("head")[0].appendChild(link);
+</script>
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css" />
+</head>
+<body>
+	<!-- <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script> -->
+	<script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+	<div class="content">
+		<div class="reverse_row_container">
+			<div class="menu_card">
+				<article>
+					<header>Manila</header>
+					<ul class="menu">
+						<a href="../index.html"><li class="home">Home</li></a>
+						<a href="manila_background.html"><li class="current">Background</li></a>
+						<a href="manila_intramuros.html"><li>Intramuros</li></a>
+						<a href="daniel_burnham.html"><li>Daniel Burnham</li></a>
+						<a href="washington_dc.html"><li>Washington DC</li></a>
+						<a href="1905_manila_plan.html"><li>1905 Manila Plan</li></a>
+						<a href="manila_rizal_park.html"><li>Rizal Park</li></a>
+					</ul>
+				</article>
+			</div>
+			<div class="column_container">
+				<div class="card detail_card">
+					<article>
+						<header>Background</header>
+						<a href="../images/Background_Slide.png"
+							data-lightbox="image-1" data-title="Background"> <img
+							src="../images/Background_Slide.png" />
+						</a>
+						<p>Technically speaking, the foundation of the city of Manila
+							was 1571, and was a direct outcome of Spanish colonisation.
+							However prior to 1571 a settlement was known to exist in
+							proximity to the Pasig River. Records from about 900AD reveal not
+							only the presence of a settlement to the north and south of the
+							mouth of the Pasig River, but that local civilization contained a
+							degree of political, social, and economic complexity. Although
+							containing a population of just 2,000 people by the time of the
+							Spanish arrival, Maynila as it was then known had
+							well-established ties with different islands in the Philippine
+							Archipelago, as well as overseas places such as Brunei, China,
+							Siam, and the Malay Peninsula.</p>
+
+						<p>The arrival of Islam though greatly affected the nature of
+							life in the port settlement, and resulted not only in cultural
+							transition but the strengthening of international trading links.
+							As such Maynila had local, regional, and international
+							affiliations by the mid-1500s. As a port of call frequently
+							visited by the Chinese and Southeast Asian merchants, Maynila by
+							the time of the onset of Spanish colonisation had a reputation
+							for being the primary locus for trade within the Philippine
+							Archipelago.</p>
+
+						<div class="for_more_info">
+							Click <a target="for_more_info"
+								href="http://malacanang.gov.ph/75832-pre-colonial-manila/">here</a>
+							for further information.
+						</div>
+
+						<!-- <div class="fb-like"
+							data-href="https://libexhibition-philippineshist.appspot.com/pages/manila_background.html"
+							data-layout="button_count" data-action="like"
+							data-show-faces="true" data-share="false" style="position:absolute;bottom:10px"/> -->
+					</article>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="bottom_bar">
+		<img src="../images/culib.png" /> Copyright &copy;
+		<script>
+			document.write(new Date().getFullYear())
+		</script>
+		The Chinese University of Hong Kong Library. All rights reserved.
+	</div>
+</body>
+</html>

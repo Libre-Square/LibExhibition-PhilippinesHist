@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Lora' />
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Fondamento' />
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+	var defaultCSS = "../css/exhibition.css";
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.indexOf("android") > -1 && ua.indexOf("mobile")
+			&& ua.indexOf("chrome") == -1)
+		defaultCSS = "../css/exhibition_android.css"
+	link = document.createElement("link");
+	link.href = defaultCSS;
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	link.media = "screen,print";
+	document.getElementsByTagName("head")[0].appendChild(link);
+</script>
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css" />
+</head>
+<body>
+	<!-- <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script> -->
+	<script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+	<div class="content">
+		<div class="reverse_row_container">
+			<div class="menu_card">
+				<article>
+					<header>Baguio</header>
+					<ul class="menu">
+						<a href="../index.html"><li class="home">Home</li></a>
+						<a href="benguet_uplands.html"><li>Benguet Uplands</li></a>
+						<a href="baguio_igorots.html"><li class="current">Igorots</li></a>
+						<a href="1905_baguio_plan.html"><li>1905 Baguio Plan</li></a>
+						<a href="baguio_landscape.html"><li>Landscape</li></a>
+						<a href="burnham_park.html"><li>Burnham Park</li></a>
+					</ul>
+				</article>
+			</div>
+			<div class="column_container">
+				<div class="card detail_card">
+					<article>
+						<header>Igorots</header>
+						<div class="imgbox">
+							<a href="../images/Igorot_Slide_large.jpg"
+								data-lightbox="image-8" data-title="Igorots"> <img
+								src="../images/Igorot_Slide.jpg" />
+							</a>
+						</div>
+						<p>At the time the Americans began exploring the possibility
+							of developing a new city at Baguio, the local population belonged
+							to the Igorot ethnic group. Considered by the Spanish to be
+							living in ways outside of the bounds of civilisation, these
+							‘mountain people’ were the dominant population group in the
+							mountainous regions of North Luzon. For the Americans the
+							creation and development of Baguio was vital to not only
+							invigorating the economy of the north of the Philippines, but
+							also the importation of modern cultural mores.</p>
+
+						<p>Thought of as pagan and lazy it was groups such as the
+							Igorots that were to experience at first hand the core principles
+							of American colonisation: to uplift, to civilise, and to
+							Christianise. Although this process was to come via means such as
+							the development of a local education system, the use of English
+							language, advancements in public health, and the use of urban
+							design.</p>
+
+						<div class="for_more_info">
+							Click <a target="for_more_info"
+								href="http://www.jacobimages.com/2013/05/igorots-cordilleras">here</a>
+							for further information.
+						</div>
+
+						<!-- <div class="fb-like"
+							data-href="https://libexhibition-philippineshist.appspot.com/pages/baguio_igorots.html"
+							data-layout="button_count" data-action="like"
+							data-show-faces="true" data-share="false" style="position:absolute;bottom:10px"/> -->
+
+					</article>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="bottom_bar">
+		<img src="../images/culib.png" /> Copyright &copy;
+		<script>
+			document.write(new Date().getFullYear())
+		</script>
+		The Chinese University of Hong Kong Library. All rights reserved.
+	</div>
+</body>
+</html>
